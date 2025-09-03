@@ -1,10 +1,12 @@
-import type React from "react"
+
+import React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Link from "next/link"
 import ModalProvider from "@/components/modal-provider"
+import MobileNav from "@/components/mobile-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,6 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
@@ -40,25 +43,11 @@ export default function RootLayout({
                   <Link href="#projects" className="text-neutral-800 hover:text-neutral-600">
                     Projects
                   </Link>
-               
                   <Link href="#contact" className="text-neutral-800 hover:text-neutral-600">
                     Contact
                   </Link>
                 </nav>
-                <div className="md:hidden">
-                  {/* Mobile menu button would go here */}
-                  <button className="p-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  </button>
-                </div>
+                <MobileNav />
               </div>
             </div>
           </header>
@@ -67,4 +56,5 @@ export default function RootLayout({
       </body>
     </html>
   )
+
 }

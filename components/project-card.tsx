@@ -41,7 +41,7 @@ export default function ProjectCard({ title, description, tags, imagePath, proje
             className={`object-cover transition-transform duration-500 ${isHovered ? "scale-105" : "scale-100"}`}
           />
           {isHovered && (
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300">
+            <div className="absolute md:flex inset-0 bg-black/50 hidden items-center justify-center transition-opacity duration-300">
               <Button
                 variant="outline"
                 className="text-white border-white bg-transparent hover:bg-transparent hover:text-white"
@@ -62,6 +62,10 @@ export default function ProjectCard({ title, description, tags, imagePath, proje
               </Badge>
             ))}
           </div>
+        </div>
+        {/* Mobile-only button at the bottom */}
+        <div className="block md:hidden w-full px-5 pb-4">
+          <Button className="w-full" onClick={handleViewMore}>Visit Project</Button>
         </div>
       </CardContent>
     </Card>
