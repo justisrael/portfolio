@@ -26,7 +26,36 @@ export interface Experience {
 
 
 
-  export const experiences: Experience[] = [
+export const experiences: Experience[] = [
+  {
+    id: "tabara",
+    title: "Tabara",
+    role: "Lead Engineer",
+    location: "Lagos, Nigeria",
+    period: "Feb. 2025 – Present",
+    description:
+      "Led frontend and backend engineering for an eCommerce platform offering a seamless shopping experience with advanced authentication and payment features.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Shadcn",
+      "TailwindCSS",
+      "Zoho-mail",
+      "Node.js",
+      "NestJS",
+      "MySQL",
+      "Prisma",
+    ],
+    responsibilities: [
+      "Implemented full authentication system integrated with backend API, including signup, login, password recovery, and 2FA for secure access.",
+      "Developed a modern eCommerce system with product listing, cart management, checkout, and order tracking features.",
+      "Integrated payment gateway for seamless transactions and automatic order confirmation upon successful payment.",
+      "Collaborated on database design and API development using NestJS and Prisma with MySQL for scalable data handling.",
+      "Designed and implemented a dynamic email notification system, including coded email templates using Zoho Mail API.",
+    ],
+    image: "/tabara-port.png?height=400&width=600",
+    url: "https://withtabara.com/",
+  },
   {
     id: "coconut-africa",
     title: "Coconut Africa",
@@ -249,7 +278,7 @@ export default function Home() {
                   <div className="w-6 h-6 rounded-full bg-neutral-200 flex items-center justify-center text-sm">2</div>
                   <div>
                     <h3 className="font-medium">Backend Development</h3>
-                    <p className="text-neutral-600 text-sm">Proficient with Node.js, Express, and MongoDB</p>
+                    <p className="text-neutral-600 text-sm">Proficient with Node.js, Express, NestJs, Typescript, Django, Flask, Postgresql, MySQL, MongoDB and more</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -275,15 +304,61 @@ export default function Home() {
                   <SkillBadge>React</SkillBadge>
                   <SkillBadge>Next.js</SkillBadge>
                   <SkillBadge>Node.js</SkillBadge>
-                  <SkillBadge>Express</SkillBadge>
+                  <SkillBadge>Express.js</SkillBadge>
+                  <SkillBadge>NestJS</SkillBadge>
+                  <SkillBadge>Java</SkillBadge>
+                  <SkillBadge>Spring Boot</SkillBadge>
+                  <SkillBadge>Django</SkillBadge>
+                  <SkillBadge>Flask</SkillBadge>
                   <SkillBadge>MongoDB</SkillBadge>
-                  <SkillBadge>TailwindCSS</SkillBadge>
+                  <SkillBadge>PostgreSQL</SkillBadge>
+                  <SkillBadge>MySQL</SkillBadge>
+                  <SkillBadge>Prisma</SkillBadge>
+                  <SkillBadge>Mongoose</SkillBadge>
+                  <SkillBadge>Redis</SkillBadge>
+                  <SkillBadge>BullMQ</SkillBadge>
+                  <SkillBadge>Kafka</SkillBadge>
+                  <SkillBadge>JWT</SkillBadge>
+                  <SkillBadge>OAuth</SkillBadge>
                   <SkillBadge>GraphQL</SkillBadge>
                   <SkillBadge>Firebase</SkillBadge>
-                  <SkillBadge>Python</SkillBadge>
+                  <SkillBadge>TailwindCSS</SkillBadge>
+                  <SkillBadge>SCSS</SkillBadge>
+                  <SkillBadge>Styled-Components</SkillBadge>
+                  <SkillBadge>Shadcn</SkillBadge>
                   <SkillBadge>Figma</SkillBadge>
+                  <SkillBadge>Docker</SkillBadge>
+                  <SkillBadge>Nginx</SkillBadge>
+                  <SkillBadge>AWS EC2</SkillBadge>
+                  <SkillBadge>AWS Lambda</SkillBadge>
+                  <SkillBadge>AWS Elastic Beanstalk</SkillBadge>
+                  <SkillBadge>AWS CodePipeline</SkillBadge>
+                  <SkillBadge>ECR</SkillBadge>
+                  <SkillBadge>Git</SkillBadge>
+                  <SkillBadge>GitHub</SkillBadge>
+                  <SkillBadge>Bitbucket</SkillBadge>
                   <SkillBadge>Vercel</SkillBadge>
                   <SkillBadge>Netlify</SkillBadge>
+                  <SkillBadge>Linux (Ubuntu)</SkillBadge>
+                  <SkillBadge>Windows Server</SkillBadge>
+                  <SkillBadge>System Architecture</SkillBadge>
+                  <SkillBadge>Microservices</SkillBadge>
+                  <SkillBadge>Serverless</SkillBadge>
+                  <SkillBadge>Containerization</SkillBadge>
+                  <SkillBadge>CI/CD</SkillBadge>
+                  <SkillBadge>Performance Optimization</SkillBadge>
+                  <SkillBadge>Load Balancing</SkillBadge>
+                  <SkillBadge>Scalable APIs</SkillBadge>
+                  <SkillBadge>Observability</SkillBadge>
+                  <SkillBadge>Monitoring</SkillBadge>
+                  <SkillBadge>Zoho Mail API</SkillBadge>
+                  <SkillBadge>SendGrid API</SkillBadge>
+                  <SkillBadge>EmailJS</SkillBadge>
+                  <SkillBadge>Paystack</SkillBadge>
+                  <SkillBadge>SANITY.io</SkillBadge>
+                  <SkillBadge>UI/UX Design</SkillBadge>
+                  <SkillBadge>Web Accessibility</SkillBadge>
+
                 </div>
               </div>
             </div>
@@ -442,10 +517,10 @@ export default function Home() {
                     <a href="tel:08081095271" className="text-neutral-800 hover:underline mr-2">08081095271</a>
                     <a href="https://wa.me/2348081095271" target="_blank" rel="noopener noreferrer" className="text-neutral-800 hover:underline">WhatsApp DM</a>
                   </div>
-                  
+
                 </div>
               </div>
-             
+
             </div>
           </div>
         </div>
